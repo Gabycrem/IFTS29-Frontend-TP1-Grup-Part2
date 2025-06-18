@@ -1,61 +1,73 @@
-# 🧩 Proyecto React - TP Grupal 1
+# 🧩 Proyecto React - TP Grupal 1 - Segunda Entrega
 
-Aplicación web desarrollada como parte del Trabajo Práctico Grupal N.º 1 del curso. El proyecto consiste en una SPA (Single Page Application) utilizando **React** y **React Router**, aplicando buenas prácticas de desarrollo, diseño responsive, manejo de datos y despliegue en la nube.
+Este repositorio corresponde a la segunda entrega del **Trabajo Práctico Grupal N.º 1**, partiendo del desarrollo original de una **SPA (Single Page Application)** realizada con **React** y **React Router**. En esta etapa, nos propusimos **evolucionar el proyecto** incorporando nuevas funcionalidades interactivas y mejoras sugeridas por el equipo docente y el propio grupo.
 
 ---
 
-## 📅 Fechas
-- **Inicio del proyecto:** 5 de Mayo  
-- **Entrega final:** 2 de Junio
+## 🎯 Objetivo de la Segunda Entrega
+
+Implementar al menos **4 nuevas funcionalidades** a partir del listado propuesto para enriquecer la experiencia del usuario y demostrar dominio técnico en:
+
+- Manejo de rutas y estado
+- Interacción con APIs
+- Diseño UX/UI
+- Componentización avanzada
+- Buenas prácticas en desarrollo front-end
+
+---
+
+## ✅ Mejoras Implementadas
+
+- 🔁 **Paginación para la API Externa**  
+  Navegación entre páginas de resultados con botones Anterior / Siguiente y visualización de número de página actual.
+
+- 🖼️ **Galería de Imágenes Interactiva**  
+  Grid de imágenes con lightbox al hacer clic, zoom y navegación dentro de la galería.
+
+- 🔗 **Botones de Redes Sociales Animados**  
+  Íconos interactivos con efectos al hover y enlaces ficticios a GitHub, LinkedIn, etc.
+
+- 🎠 **Carrusel de Proyectos Destacados**  
+  Carrusel responsive con controles de navegación para explorar proyectos del equipo.
 
 ---
 
 ## 📸 Capturas de Pantalla
 
-### 🖼️ Presentación del Equipo
-![Presentacion](./public/capturas/presentacion.png)
+*(Las siguientes capturas corresponden al nuevo desarrollo incorporado en esta segunda entrega)*
 
-### 👥 Perfil Individual
-![Perfil ](./public/capturas/unPerfil.png)
+### 🔁 Paginación de la API
+![Paginación](./public/capturas/paginacion.png)
 
-### 📚 Lista de Libros desde JSON
-![Libros](./public/capturas/json.png)
+### 🖼️ Galería Interactiva
+![Galería](./public/capturas/galeria.png)
 
-### 🌍 Bitácora
-![Bitacora](./public/capturas/bitacora.png)
+### 🔗 Redes Sociales
+![Redes](./public/capturas/redes.png)
+
+### 🎠 Carrusel de Proyectos
+![Carrusel](./public/capturas/carrusel.png)
 
 ---
 
 ## 🚀 Deploy
 
-🔗 Link a la app en Vercel: _[(https://ifts-29-frontend-tp-1-grup.vercel.app/)]_
+🔗 Link a la app en Vercel: _[próximamente](link)_
 
 ---
 
-## 📁 Repositorio
+## 📁 Repositorio Original
 
-🔗 Link al repositorio: _[(https://github.com/Gabycrem/IFTS29-Frontend-TP1-Grup)]_
-
+🔗 Repositorio base del proyecto original (Primera Entrega):  
+_[próximamente](link)_
 ---
 
 ## 👥 Integrantes
 
 - Micaela Natalia Luaces – Diseño e Identidad Visual.  
 - Lucas Ezequiel Blaci – Integración de datos.  
-- Nazarena Gabriela Macre – Liderazgo y Coordinación General.
-- Mirta Veron - Perfiles dinámicos.
-
----
-
-## 🧩 Funcionalidades
-
-- 🌐 SPA con React y React Router DOM  
-- 🧭 Navegación dinámica por rutas  
-- 📁 Visualización de datos desde archivo JSON  
-- 🌍 Consumo de datos desde API pública  
-- 🧑‍💻 Perfiles individuales con rutas dinámicas  
-- 🎨 Estilo visual coherente y responsive  
-- 📓 Bitácora integrada al proyecto  
+- Nazarena Gabriela Macre – Liderazgo y Coordinación General.  
+- Mirta Veron – Perfiles dinámicos y nuevas vistas.
 
 ---
 
@@ -72,13 +84,18 @@ Aplicación web desarrollada como parte del Trabajo Práctico Grupal N.º 1 del 
 
 ---
 
-## 🌲 Estructura del Proyecto
+## 🌲 Estructura del Proyecto (actualizada)
 
+🌲 Estructura del Proyecto (actualizada)
 ```
 src/
 ├── components/
 │   ├── Layout.jsx
 │   ├── Sidebar.jsx
+│   ├── Carrusel.jsx
+│   ├── Galeria.jsx
+│   ├── PaginacionAPI.jsx
+│   ├── RedesSociales.jsx
 │   ├── PresentacionEquipo.jsx
 │   ├── ListaAPI.jsx
 │   └── Perfil.jsx
@@ -87,56 +104,39 @@ src/
 ├── pages/
 │   ├── Home.jsx
 │   ├── Equipo.jsx
-│   └── Comentarios.jsx
+│   ├── Comentarios.jsx
+│   └── Proyectos.jsx
 ├── App.jsx
 ├── main.jsx
 ├── index.css
 └── styles/
     └── global.css
 ```
-
 ---
+
 
 ## 📌 Estado del Proyecto
 
-✅ Repositorio creado  
-✅ Estructura base en React  
-✅ Rutas definidas  
-✅ Componentes principales  
-✅ Consumo de JSON  
-✅ Consumo de API pública  
-✅ Estilos responsive  
-✅ Bitácora final  
-✅ Deploy en Vercel  
+✅ Estructura base clonada  
+✅ Nuevas funcionalidades integradas  
+✅ Estilos actualizados y mejoras UX  
+✅ Documentación completa  
+✅ Deploy en producción
 
 ---
 
-## 🔧 Futuras Mejoras
 
-- 🔗 **Agregar redes sociales a los perfiles individuales**  
-  Incluir íconos y enlaces a redes sociales (LinkedIn, GitHub, etc.) en cada perfil para dar mayor visibilidad al trabajo de cada integrante.
+## 📈 Futuras Mejoras
 
-- 📱 **Ocultar el menú hamburguesa al seleccionar un enlace**  
-  Mejorar la experiencia móvil cerrando automáticamente el menú tras hacer clic en una opción.
+- 🌙 **Modo oscuro**  
+- 🔎 **Buscador por título/autor en lista de libros**  
+- 💌 **Formulario de contacto funcional con validaciones**  
+- 📂 **Separación de componentes reutilizables en carpetas**  
+- 🌐 **Soporte multilenguaje**
 
-- 🎠 **Carrusel para los proyectos o libros**  
-  Reemplazar la lista estática por un carrusel interactivo que permita explorar los elementos de forma más atractiva.
-
-- 🌙 **Modo oscuro (Dark Mode)**  
-  Agregar un interruptor que permita alternar entre tema claro y oscuro, adaptable a la preferencia del usuario.
-
-- 🗂️ **Filtrado y búsqueda de libros**  
-  Incorporar un buscador o filtros por autor/categoría para facilitar el acceso a contenidos específicos.
-
-- ✨ **Animaciones y transiciones suaves**  
-  Incluir efectos visuales sutiles para mejorar la experiencia al navegar o interactuar con la aplicación.
-
-- 📬 **Formulario de contacto o feedback**  
-  Agregar un formulario para que usuarios puedan dejar sugerencias, dudas o comentarios al equipo.
-
-  
 ---
+
 
 ## 📌 Notas Finales
 
-Este proyecto nos permitió aplicar conocimientos teóricos y prácticos de React, aprender a trabajar en equipo y organizar tareas en un entorno colaborativo. Cada integrante aportó desde su rol, fortaleciendo no solo las habilidades técnicas, sino también las comunicacionales y organizativas.
+Esta segunda etapa del proyecto nos permitió profundizar en conceptos clave del desarrollo con React, mejorar nuestras habilidades de colaboración y enfrentar desafíos técnicos con una planificación clara. Continuamos aprendiendo a través de la práctica y consolidando nuestra experiencia en el desarrollo de aplicaciones web modernas.
