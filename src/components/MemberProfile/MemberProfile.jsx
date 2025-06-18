@@ -1,7 +1,10 @@
 import React from "react";
 import "./MemberProfile.css";
 import Card from "../Card/Card";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const MemberProfile = ({ name,img, skills, projects, technologies }) => {
   return (
@@ -24,17 +27,25 @@ const MemberProfile = ({ name,img, skills, projects, technologies }) => {
 
  <div className="section">
   <h2>Proyectos Destacados</h2>
-  <div className="projectGallery">
+  <Swiper 
+    modules={[Navigation]}
+    slidesPerView={1}
+    navigation={true}
+    loop={true}
+    className="projectCarousel"
+  >
     {projects.map((project, i) => (
-      <Card
-        key={i}
-        title={project.title}
-        description={project.description}
-        image={project.img}
-        className="projectCard"
-      />
+      <SwiperSlide key={i}>
+        <Card
+          title={project.title}
+          description={project.description}
+          image={project.img}
+          className="projectCard"
+        />
+      </SwiperSlide>
     ))}
-  </div>
+  
+  </Swiper>
 </div>
 
 
