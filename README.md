@@ -16,7 +16,7 @@ Implementar al menos **4 nuevas funcionalidades** a partir del listado propuesto
 
 ---
 
-## ✅ Mejoras Implementadas
+## ✅ Mejoras elegidas para implementar
 
 - 🔁 **Paginación para la API Externa**  
   Navegación entre páginas de resultados con botones Anterior / Siguiente y visualización de número de página actual.
@@ -27,7 +27,7 @@ Implementar al menos **4 nuevas funcionalidades** a partir del listado propuesto
 - 🔗 **Botones de Redes Sociales Animados**  
   Íconos interactivos con efectos al hover y enlaces ficticios a GitHub, LinkedIn, etc.
 
-- 🎠 **Carrusel de Proyectos Destacados**  
+- 🎠 **Carrusel de Proyectos Destacados** ✅  
   Carrusel responsive con controles de navegación para explorar proyectos del equipo.
 
 ---
