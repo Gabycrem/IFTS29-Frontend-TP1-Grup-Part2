@@ -140,3 +140,5 @@ src/
 ## 📌 Notas Finales
 
 Esta segunda etapa del proyecto nos permitió profundizar en conceptos clave del desarrollo con React, mejorar nuestras habilidades de colaboración y enfrentar desafíos técnicos con una planificación clara. Continuamos aprendiendo a través de la práctica y consolidando nuestra experiencia en el desarrollo de aplicaciones web modernas.
+
+--- Probando comandos clone ---
