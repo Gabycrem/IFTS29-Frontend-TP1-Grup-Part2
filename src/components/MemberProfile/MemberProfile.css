@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: space-evenly;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   border-bottom: 2px solid var(--color-acento); 
@@ -37,6 +38,7 @@
 .profileHeader h1 {
   width: 100%;
   margin: 0;
+  margin-bottom: 0.3rem;
 }
 
 /* Imagen perfil */
@@ -45,6 +47,37 @@
   width: 100%; 
   height: auto;
   max-width: 20rem;
+}
+
+/* ---------------- Redes Sociales ---------------------- */
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socialLink {
+  display: inline-block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.socialIcon {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover .socialIcon {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 /* ---------------- Habilidades ---------------------- */
