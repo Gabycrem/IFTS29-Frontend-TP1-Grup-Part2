@@ -31,7 +31,7 @@ const Sidebar = () => {
 
           <NavLink to="/datos-locales" className="link" onClick={closeMenu}>Libros Clásicos</NavLink>
 
-          <NavLink to="/api" className="link" onClick={closeMenu}>Feriados 2025</NavLink>
+          <NavLink to="/api" className="link" onClick={closeMenu}>Feriados Argentina</NavLink>
 
           <NavLink to="/bitacora" className="link" onClick={closeMenu}>Bitácora</NavLink>
 
