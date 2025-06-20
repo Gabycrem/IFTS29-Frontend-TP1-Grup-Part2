@@ -4,6 +4,18 @@
     "id": "perfillucas",
     "name": "Lucas Blaci",
     "img": "/assets/perfillucas.jpg",
+    "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://ar.linkedin.com/in/lucas-blaci-9b296936",
+      "iconName": "linkedin" 
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Caligarum",
+      "iconName": "github"
+     }
+    ],
     "skills": ["Responsabilidad", "Trabajo en equipo", "Empatía"],
     "projects": [
       {
@@ -34,6 +46,18 @@
     "id": "perfilmicaela",
     "name": "Micaela Luaces",
     "img": "/assets/perfilmica.jpg",
+    "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://ar.linkedin.com/in/micaelaluaces",
+      "iconName": "linkedin" 
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/gypsypochi",
+      "iconName": "github"
+     }
+    ],
     "skills": ["Creatividad", "Escucha Activa", "Gestión del tiempo"],
     "projects": [
       {
@@ -64,6 +88,18 @@
     "id": "perfilnazarena",
     "name": "Nazarena Macre",
     "img": "/assets/perfilnazarena.jpg",
+    "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/macrenazarena/",
+      "iconName": "linkedin" 
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Gabycrem",
+      "iconName": "github"
+     }
+    ],
     "skills": ["Liderazgo colaborativo", "Pensamiento Crítico", "Proactividad"],
     "projects": [
       {
@@ -94,6 +130,18 @@
     "id": "perfilmirta",
     "name": "Mirta Verón",
     "img": "/assets/perfilmirta.jpg",
+    "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mirtaveron/",
+      "iconName": "linkedin" 
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/mirtaveron",
+      "iconName": "github"
+     }
+    ],
     "skills": ["Comunicación efectiva", "Resolución de conflictos", "Adaptabilidad"],
     "projects": [
       {
