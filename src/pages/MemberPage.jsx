@@ -18,7 +18,7 @@ import csharpIcon from '../assets/logo-csharp.webp';
 import dotnetIcon from '../assets/logo-dotnet.png';
 
 // Importa iconos de redes sociales
-import linkedinIcon from '../assets/logo-linkedin.webp'; 
+import linkedinIcon from '../assets/logo-linkedin.png'; 
 import githubIcon from '../assets/logo-github.png';
 
 // Objeto que mapea nombres de iconos de tecnologías a las importaciones
