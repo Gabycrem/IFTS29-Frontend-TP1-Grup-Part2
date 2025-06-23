@@ -2,7 +2,7 @@
 
 .tarjetas-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 1rem; 
   padding: 1rem;
   justify-items: center;
@@ -55,9 +55,16 @@
 
 .card-portada {
   width: 100%;
-  height: 17rem; 
+  aspect-ratio: 10/15;
+  /* height: 17rem;  */
   object-fit: cover;
   border-radius: 0.5rem;
   margin-bottom: 0.625rem;
   cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .tarjetas-container {
+    grid-template-columns: repeat(3, 1fr); /* fijo a 3 columnas máx. */
+  }
 }
