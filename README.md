@@ -18,16 +18,16 @@ Implementar al menos **4 nuevas funcionalidades** a partir del listado propuesto
 
 ## ✅ Mejoras elegidas para implementar
 
-- 🔁 **Paginación para la API Externa**  
+- 🔁 **Paginación para la API Externa**  Por Lucas ✅
   Navegación entre páginas de resultados con botones Anterior / Siguiente y visualización de número de página actual.
 
-- 🖼️ **Galería de Imágenes Interactiva**  
+- 🖼️ **Galería de Imágenes Interactiva**  Por Mica ✅
   Grid de imágenes con lightbox al hacer clic, zoom y navegación dentro de la galería.
 
-- 🔗 **Botones de Redes Sociales Animados**  
+- 🔗 **Botones de Redes Sociales Animados**  Por Mirta ✅
   Íconos interactivos con efectos al hover y enlaces ficticios a GitHub, LinkedIn, etc.
 
-- 🎠 **Carrusel de Proyectos Destacados** ✅  
+- 🎠 **Carrusel de Proyectos Destacados** Por Naza ✅  
   Carrusel responsive con controles de navegación para explorar proyectos del equipo.
 
 ---
@@ -52,14 +52,14 @@ Implementar al menos **4 nuevas funcionalidades** a partir del listado propuesto
 
 ## 🚀 Deploy
 
-🔗 Link a la app en Vercel: _[próximamente](link)_
+🔗 Link a la app en Vercel: _[https://ifts-29-frontend-tp-1-grup-part2.vercel.app/](https://ifts-29-frontend-tp-1-grup-part2.vercel.app/)_
 
 ---
 
 ## 📁 Repositorio Original
 
 🔗 Repositorio base del proyecto original (Primera Entrega):  
-_[próximamente](link)_
+_[https://github.com/Gabycrem/IFTS29-Frontend-TP1-Grup](https://github.com/Gabycrem/IFTS29-Frontend-TP1-Grup)_
 ---
 
 ## 👥 Integrantes
