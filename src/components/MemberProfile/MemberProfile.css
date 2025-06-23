@@ -201,6 +201,12 @@
 }
 
 /* Responsive design */
+@media only screen and (max-width: 1004px){
+  .socialLinks {
+  justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .projectCarousel .swiper-button-next {
   right: 0px;
@@ -209,6 +215,7 @@
   .projectCarousel .swiper-button-prev {
   left: 0px;
   }
+
 }
 
 @media only screen and (max-width: 885px) {
