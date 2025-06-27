@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import members from "../data/members.json";
 import MemberProfile from "../components/MemberProfile/MemberProfile";
 
-// Importa todos los iconos
+// Importa todos los iconos de tecnologías
 import html5Icon from '../assets/logo-html5.png';
 import jsIcon from '../assets/logo-javascript.png';
 import reactIcon from '../assets/logo-react.png';
@@ -17,8 +17,12 @@ import sqlIcon from '../assets/logo-sql.png';
 import csharpIcon from '../assets/logo-csharp.webp';
 import dotnetIcon from '../assets/logo-dotnet.png';
 
-// Objeto que mapea nombres de iconos a las importaciones
-const icons = {
+// Importa iconos de redes sociales
+import linkedinIcon from '../assets/logo-linkedin.png'; 
+import githubIcon from '../assets/logo-github.png';
+
+// Objeto que mapea nombres de iconos de tecnologías a las importaciones
+const techIcons = {
   html5: html5Icon,
   js: jsIcon,
   react: reactIcon,
@@ -33,18 +37,31 @@ const icons = {
   dotnet: dotnetIcon
 };
 
+// Objeto que mapea nombres de iconos de redes sociales a las importaciones
+const socialIcons = {
+  linkedin: linkedinIcon,
+  github: githubIcon
+};
+
 const MemberPage = () => {
   const { id } = useParams();
   const member = members.find((m) => m.id === id);
 
   if (!member) return <p>Integrante no encontrado</p>;
 
+  // Mapea las tecnologías con sus iconos
   const technologiesWithIcons = member.technologies.map(tech => ({
     ...tech,
-    icon: icons[tech.iconName]
+    icon: techIcons[tech.iconName]
   }));
 
-  return <MemberProfile {...member} technologies={technologiesWithIcons} />;
+  // Mapea las redes sociales con sus iconos (si existen en el JSON)
+  const socialLinksWithIcons = member.socialLinks ? member.socialLinks.map(social => ({
+    ...social,
+    icon: socialIcons[social.iconName] || socialIcons[social.platform?.toLowerCase()]
+  })) : [];
+
+  return <MemberProfile {...member} technologies={technologiesWithIcons} socialLinks={socialLinksWithIcons}/>;
 };
 
 export default MemberPage;

@@ -1,22 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import "yet-another-react-lightbox/styles.css";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Lightbox from "yet-another-react-lightbox";
+
 import "../../styles/global.css";
 import "../Card/Card.css";
 
 const ListaJson = () => {
   const [libros, setLibros] = useState([]);
   const [error, setError] = useState(null);
-
+  const [indexImagen, setIndexImagen] = useState(null); 
   useEffect(() => {
-    fetch('/dataLibros.json')
+    fetch("/dataLibros.json")
       .then((res) => {
         if (!res.ok) {
-          throw new Error('Error al cargar el archivo JSON');
+          throw new Error("Error al cargar el archivo JSON");
         }
         return res.json();
       })
       .then((data) => setLibros(data))
       .catch((error) => setError(error.message));
   }, []);
+
+  const imagenes = libros
+    .map((libro) => libro.imagen)
+    .filter((img) => img);
 
   return (
     <div className="lista-json">
@@ -26,16 +34,48 @@ const ListaJson = () => {
         {libros.map((libro, index) => (
           <div key={index} className="card json-card">
             <div className="card-body">
-             <h3 className="card-title">{libro.titulo}</h3>
-            <p className="card-description"><strong>Autor:</strong> {libro.autor}</p>
-            <p className="card-description"><strong>Año:</strong> {libro.anio}</p>
-            <p className="card-description"><strong>Género:</strong> {libro.genero}</p>
-            <p className="card-description" style={{ fontStyle: 'italic' }}>{libro.descripcion}</p>
-
+              {/* Imagen de la portada */}
+              {libro.imagen && (
+                <img
+                  src={`/portadas/${libro.imagen}`}
+                  alt={`Portada de ${libro.titulo}`}
+                  className="card-portada"
+                  onClick={() => setIndexImagen(index)}
+                />
+              )}
+              <h3 className="card-title">{libro.titulo}</h3>
+              <p className="card-description">
+                <strong>Autor:</strong> {libro.autor}
+              </p>
+              <p className="card-description">
+                <strong>Año:</strong> {libro.anio}
+              </p>
+              <p className="card-description">
+                <strong>Género:</strong> {libro.genero}
+              </p>
+              <p
+                className="card-description"
+                style={{ fontStyle: "italic" }}
+              >
+                {libro.descripcion}
+              </p>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Lightbox con zoom */}
+      {imagenes.length > 0 && (
+        <Lightbox
+          open={indexImagen !== null}
+          close={() => setIndexImagen(null)}
+          index={indexImagen ?? 0}
+          slides={imagenes.map((img) => ({
+            src: `/portadas/${img}`,
+          }))}
+          plugins={[Zoom]}
+        />
+      )}
     </div>
   );
 };

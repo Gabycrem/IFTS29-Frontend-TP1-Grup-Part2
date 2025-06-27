@@ -1,15 +1,45 @@
 import React from "react";
 import "./MemberProfile.css";
 import Card from "../Card/Card";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
-
-const MemberProfile = ({ name,img, skills, projects, technologies }) => {
+const MemberProfile = ({ name,img, skills, projects, technologies, socialLinks }) => {
   return (
     <div className="profileContainer">
       <div className="profileHeader">
-        <h1>{name}</h1>
-        <img className="card-img" src={img} alt="Foto de perfil de {name}"></img>
+        <div className="profileInfo">
+          <h1>{name}</h1>
+          {/* Iconos de redes sociales */}
+          {socialLinks && socialLinks.length > 0 && (
+            <div className="socialLinks">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="socialLink"
+                  aria-label={`${name} en ${social.platform}`}
+                >
+                  <img
+                    src={social.icon}
+                    alt={social.platform}
+                    className="socialIcon"
+                    onError={(e) => {
+                      e.target.src = "/placeholder-social.png";
+                    }}
+                  />
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+        <img className="card-img" src={img} alt={`Foto de perfil de ${name}`}></img>
       </div>
+
 
       <div className="section">
         <h2>Habilidades Principales</h2>
@@ -24,17 +54,25 @@ const MemberProfile = ({ name,img, skills, projects, technologies }) => {
 
  <div className="section">
   <h2>Proyectos Destacados</h2>
-  <div className="projectGallery">
+  <Swiper 
+    modules={[Navigation]}
+    slidesPerView={1}
+    navigation={true}
+    loop={true}
+    className="projectCarousel"
+  >
     {projects.map((project, i) => (
-      <Card
-        key={i}
-        title={project.title}
-        description={project.description}
-        image={project.img}
-        className="projectCard"
-      />
+      <SwiperSlide key={i}>
+        <Card
+          title={project.title}
+          description={project.description}
+          image={project.img}
+          className="projectCard"
+        />
+      </SwiperSlide>
     ))}
-  </div>
+  
+  </Swiper>
 </div>
 
 
